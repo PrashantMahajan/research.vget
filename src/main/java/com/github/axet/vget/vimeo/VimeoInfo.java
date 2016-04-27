@@ -1,4 +1,4 @@
-package com.github.axet.vget.vhs;
+package com.github.axet.vget.vimeo;
 
 import java.net.URL;
 

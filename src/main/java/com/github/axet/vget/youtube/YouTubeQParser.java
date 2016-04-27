@@ -1,4 +1,4 @@
-package com.github.axet.vget.vhs;
+package com.github.axet.vget.youtube;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -7,8 +7,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import com.github.axet.vget.info.VideoFileInfo;
 import com.github.axet.vget.info.VideoInfo;
-import com.github.axet.vget.vhs.YouTubeInfo.StreamCombined;
-import com.github.axet.vget.vhs.YouTubeInfo.YoutubeQuality;
+import com.github.axet.vget.youtube.YouTubeInfo.StreamCombined;
+import com.github.axet.vget.youtube.YouTubeInfo.YoutubeQuality;
 import com.github.axet.wget.info.DownloadInfo;
 import com.github.axet.wget.info.ex.DownloadError;
 import com.github.axet.wget.info.ex.DownloadRetry;

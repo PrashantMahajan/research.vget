@@ -1,4 +1,4 @@
-package com.github.axet.vget.vhs;
+package com.github.axet.vget.youtube;
 
 import java.net.URI;
 import java.net.URL;

@@ -1,4 +1,4 @@
-package com.github.axet.vget.vhs;
+package com.github.axet.vget.youtube;
 
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -31,14 +31,14 @@ import com.github.axet.vget.info.VGetParser;
 import com.github.axet.vget.info.VideoFileInfo;
 import com.github.axet.vget.info.VideoInfo;
 import com.github.axet.vget.info.VideoInfo.States;
-import com.github.axet.vget.vhs.YouTubeInfo.AudioQuality;
-import com.github.axet.vget.vhs.YouTubeInfo.Container;
-import com.github.axet.vget.vhs.YouTubeInfo.Encoding;
-import com.github.axet.vget.vhs.YouTubeInfo.StreamAudio;
-import com.github.axet.vget.vhs.YouTubeInfo.StreamCombined;
-import com.github.axet.vget.vhs.YouTubeInfo.StreamInfo;
-import com.github.axet.vget.vhs.YouTubeInfo.StreamVideo;
-import com.github.axet.vget.vhs.YouTubeInfo.YoutubeQuality;
+import com.github.axet.vget.youtube.YouTubeInfo.AudioQuality;
+import com.github.axet.vget.youtube.YouTubeInfo.Container;
+import com.github.axet.vget.youtube.YouTubeInfo.Encoding;
+import com.github.axet.vget.youtube.YouTubeInfo.StreamAudio;
+import com.github.axet.vget.youtube.YouTubeInfo.StreamCombined;
+import com.github.axet.vget.youtube.YouTubeInfo.StreamInfo;
+import com.github.axet.vget.youtube.YouTubeInfo.StreamVideo;
+import com.github.axet.vget.youtube.YouTubeInfo.YoutubeQuality;
 import com.github.axet.wget.WGet;
 import com.github.axet.wget.info.ex.DownloadError;
 import com.github.axet.wget.info.ex.DownloadRetry;
@@ -762,8 +762,7 @@ public class YouTubeParser extends VGetParser {
         }
     }
 
-    void extractUrlEncodedVideos(List<VideoDownload> sNextVideoURL, String sline, YouTubeInfo info, AtomicBoolean stop,
-            Runnable notify) throws Exception {
+    void extractUrlEncodedVideos(List<VideoDownload> sNextVideoURL, String sline, YouTubeInfo info, AtomicBoolean stop, Runnable notify) throws Exception {
         String[] urlStrings = sline.split("url=");
 
         for (String urlString : urlStrings) {
